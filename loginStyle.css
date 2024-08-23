@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --txtcolor : #FFEAC5;
+    --poppins : "Poppins", sans-serif;
+    --montserrat : 'Montserrat', sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    background-color: black;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+
+    background-color: black;
+    background-image: url(assets/download.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    filter: brightness(0.4) blur(2px);
+}
+
+.login-main {
+    width: 30vw;
+    height: 70vh;
+
+    position: absolute;
+
+    border-radius: 6%;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0);
+
+    gap: 10%;
+}
+
+.login-background {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    
+
+   /* From https://css.glass */
+   background: rgba(103, 103, 92, 0.41);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(11px);
+   -webkit-backdrop-filter: blur(11px);
+}
+
+.login-main .login-title {
+    position: relative;
+    font-family: var(--montserrat);
+    color: var(--txtcolor);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.login-main form {
+    width: 20vw;
+    height: fit-content;
+
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    margin-top: -20px;
+
+    gap: 15px;
+}
+
+.username-block , .password-block {
+    width: 20vw;
+
+    font-family: var(--montserrat);
+    color: var(--txtcolor);
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.password , .username{
+    font-family: var(--montserrat);
+}
+
+.username-block input, .password-block input {
+    height: 5vh;
+
+    text-indent: 1vw;
+    font-family: var(--montserrat);
+
+    border: none;
+    border-radius: calc(2vh * 5);
+}
+
+.login-main p {
+    color: var(--txtcolor);
+}
+
+.login-main p a {
+    font-family: var(--montserrat);
+    color: #FEFAE0;
+    text-decoration: underline;
+}
+
+.login-main {
+    font-family: var(--montserrat);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.login-button {
+    background: var(--txtcolor);
+    border-radius: 999px;
+    box-shadow: var(--txtcolor) 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #6C4E31;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    word-break: break-word;
+    border: 0;
+  
+    transition: 0.3s;
+  
+    width: 20vw;
+  }
+  
+  .login-button:hover {
+      transform: scale(1.05);
+  }
+  
+
+
+
+
+

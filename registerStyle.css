@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --txtcolor : #603F26;
+    --poppins : "Poppins", sans-serif;
+    --montserrat : 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+}
+
+.page-background {
+    width: inherit;
+    height: inherit;
+
+    background-image: url(assets/eepy.jpg);
+    filter: blur(2px) brightness(0.8);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.register-all {
+    width: 30vw;
+    height: 70vh;
+
+    color: var(--txtcolor);
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.register-background {
+    width: inherit;
+    height: inherit;
+
+    position: absolute;
+
+    /* From https://css.glass */
+    background: rgb(245, 245, 220, 0.41);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+}
+
+.register-main {
+    width: inherit;
+    height: inherit;
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-title {
+    position: relative;
+    font-family: var(--montserrat);
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--txtcolor);
+
+    margin-bottom: 20px;
+}
+
+#forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.email-form, .username-form, .password-form, .confirm-password {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--poppins);
+    color: var(--txtcolor);
+}
+
+.email-form input, .username-form input, .password-form input, .confirm-password input {
+    width: 20vw;
+    height: calc(4vh);
+
+    text-indent: 10px;
+
+    border: none;
+    border-radius: calc(2vh * 5);
+}
+
+.register-button {
+  background: var(--txtcolor);
+  border-radius: 999px;
+  box-shadow: var(--txtcolor) 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  word-break: break-word;
+  border: 0;
+
+  transition: 0.3s;
+
+  width: 20vw;
+  
+  margin-top: 10px;
+}
+
+.register-button:hover {
+    transform: scale(1.05);
+}
+
+.link {
+    font-family: var(--poppins);
+}
+.link a {
+    color: var(--txtcolor);
+}
+
+
+
+
+
